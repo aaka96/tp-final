@@ -1,0 +1,23 @@
+.bg-celeste {
+    background-color: #0d6efd !important;
+}
+
+.nav-text {
+    color: black;
+}
+
+.family {
+    background-color: #0d6efd;
+    border-radius: 10px;
+}
+.all{
+    border-left: inset #ED3133;
+    border-right: inset #ED3133;
+    background-color: rgb(255,217,15);
+}
+.contact-form{
+    background-color: rgb(23,145,255) !important;
+}
+.color-yellow{
+    color: rgb(255,217,15);
+}

@@ -1,0 +1,16 @@
+.bg-celeste {
+  background-color: rgb(23, 145, 255) !important;
+}
+.nav-text {
+  color: black;
+}
+
+.family {
+  background-color: #0d6efd;
+  border-radius: 10px;
+}
+.all {
+  border-left: inset #ed3133;
+  border-right: inset #ed3133;
+  background-color: rgb(255, 217, 15);
+}
