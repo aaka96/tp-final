@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+	body {
+		background-color: #c9b571;
+		margin: 0 auto;
+		background-image: url('bg-simson.jpeg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: white;
+		font-family: 'Rock Salt', cursive;
+		max-width: 1024px;
+		font-weight: bolder;
+	}
+
+	.not-found {
+		font-size: 20px;
+		margin-top: 20%;
+		margin-left: 10%;
+	}
+
+	span {
+		font-size: 60px;
+	}
+
+	.div-right {
+		z-index: 10;
+		position: absolute;
+		right: 0;
+		top: 40%;
+		overflow: hidden;
+	}
+
+	.homer-running {
+		margin-bottom: 97px;
+		opacity: 0;
+
+	}
+
+	.donut:focus img {
+		-webkit-animation: rotating-hover 3s ease-in;
+		animation-play-state: running;
+		position: relative;
+	}
+
+	@-webkit-keyframes rotating-hover {
+		10% {
+			transform: rotate(0deg);
+			transform: translateY(35%);
+		}
+
+		50% {
+			transform: translateY(350%);
+		}
+
+		100% {
+			transform: translateY(350%) translateX(600%) rotate(900deg);
+		}
+
+	}
+
+	.donut img {
+		position: relative;
+		transform: translateY(25%);
+	}
+
+	.rotating {
+		position: absolute;
+	}
+
+	.pot {
+		position: relative;
+		-webkit-animation: linear infinite;
+		-webkit-animation-name: run;
+		-webkit-animation-duration: 5s;
+		overflow: hidden;
+
+	}
+
+	@-webkit-keyframes run {
+		0% {
+			left: -10%;
+		}
+
+		50% {
+			left: 90%;
+		}
+
+		100% {
+			left: -10%;
+		}
+	}
+
+	.donut-homer{
+		-webkit-animation: linear infinite;
+		-webkit-animation-name: donut-homer;
+		-webkit-animation-duration: 2s;
+		position: relative;
+		overflow: hidden;
+	}
+	@-webkit-keyframes donut-homer {
+		0% {
+			right:90%;
+
+		}
+
+		100% {
+			right:-80%;
+			transform: rotate(600deg);
+		}
+
+	}
+
+	.homer-donut{
+		-webkit-animation: linear infinite;
+		-webkit-animation-name: homer-donut;
+		-webkit-animation-duration: 2s;
+		position: relative;
+		top: 40%;
+		overflow: hidden;
+
+	}
+	@-webkit-keyframes homer-donut {
+		0% {
+			right:100%;
+		}
+
+		100% {
+			right:-80%;
+		}
+
+	}
+</style>
+
+<body>
+	<div class="">
+		<div class="div-left">
+			<div class="not-found">
+				<span>4</span>
+				<a class="donut" href="#"><img
+						src="https://i.pinimg.com/originals/b0/9d/89/b09d8964573bee9b39a281a908a323fe.png"
+						class="rotating" width=140 /></a>
+				<span class="four">4</span>
+				<p>Error. Page not found.</p>
+				<a href="#">Volver a la pagina principal</a>
+			</div>
+		</div>
+		<div class="div-right">
+			<img src="https://static.wikia.nocookie.net/lossimpson/images/b/bd/Homer_Simpson.png/revision/latest/top-crop/width/360/height/450?cb=20100522180809&path-prefix=es"
+				class="pot" height=375 width=300 />
+		</div>
+		<img src="homer.gif" class="homer-donut" height=375 width=300 class="" />
+		<img src="https://i.pinimg.com/originals/b0/9d/89/b09d8964573bee9b39a281a908a323fe.png" class="donut-homer" width=140 />
+	</div>
+</body>
+
+</html>
