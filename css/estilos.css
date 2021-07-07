@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+body {
+	    max-width: 1024px;
+	    max-height: 800px;
+		margin: 0 auto;
+		background-image: url('../img/bg-simson.jpeg');
+		background-repeat: no-repeat;
+		background-size:cover;
+		color: white;
+		font-family: 'Rock Salt', cursive; 
+		font-weight: bolder;
+	}
+
+	.not-found {
+		font-size: 20px;
+		margin-top: 20%;
+		margin-left: 10%;
+	}
+
+	span {
+		font-size: 90px;
+	}
+
+	.div-right {
+		z-index: 10;
+		position: absolute;
+		right: 0;
+		top: 40%;
+		overflow: hidden;
+	}
+
+	.homer-running {
+		margin-bottom: 97px;
+		opacity: 0;
+
+	}
+
+	.donut:focus img {
+		animation: rotating-hover 3s ease-in;
+		animation-play-state: running;
+		position: relative;
+	}
+
+	@keyframes rotating-hover {
+		10% {
+			transform: rotate(0deg);
+			
+		}
+
+		50% {
+			transform: rotate(600deg);
+		}
+
+		100% {
+		transform: rotate(900deg);
+		}
+
+	}
+
+	.donut img {
+		
+		position: relative;
+		transform: translateY(25%);
+	}
+
+	.rotating {
+		width: 140px;
+		position: absolute;
+	}
+
+	.pot {
+		position: relative;
+		animation: linear infinite;
+		animation-name: run;
+		animation-duration: 5s;
+		overflow: hidden;
+
+	}
+
+	@-webkit-keyframes run {
+		0% {
+			left: -10%;
+		}
+
+		50% {
+			left: 90%;
+		}
+
+		100% {
+			left: -10%;
+		}
+	}
+
+	.homerodonab{
+		width: 140px;
+		animation: linear infinite;
+		animation-name: donut-homer;
+		animation-duration: 4s;
+		position: relative;
+		overflow: hidden;
+	}
+	@keyframes donut-homer {
+		0% {
+			right:90%;
+
+		}
+
+		100% {
+			right:-80%;
+			transform: rotate(600deg);
+		}
+
+	}
+
+	.homerodonaa{
+		height:375px;
+		width:300px;
+		-webkit-animation: linear infinite;
+		-webkit-animation-name: homer-donut;
+		-webkit-animation-duration: 4s;
+		position: relative;
+		top: 40%;
+		overflow: hidden;
+
+	}
+	
+	@-webkit-keyframes homer-donut {
+		0% {
+			right:100%;
+		}
+
+		100% {
+			right:-80%;
+		}
+
+	}
